@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html><html lang="en">
+<head><meta charset="utf-8">
+<title>Homework 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="css/bootstrap.css" rel="stylesheet"> 
+<style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+</style>
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css" media="screen" >
+</head>
+<body  onload="init()">
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="brand" href="#">Homework City's combo box</a>
+<div class="nav-collapse collapse"></div></div></div></div>
+<div class="container">
+<div class="span4">
+<h3>功能1. 直接點擊</h3>
+<div id="method1"></div>
+
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306188" >七堵</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306179" >內湖</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306186" >新店</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306211" >淡水</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306214" >鶯歌</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306223" >金山</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306228" >三芝</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306231" >萬里</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306251" >雙溪</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306209" >大園</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306184" >中壢</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306200" >觀音</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306202" >龍潭</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306254" >桃園國際機場</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306185" >東區</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306229" >三灣</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306181" >西屯</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306207" >石岡</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306194" >清水</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306218" >新社</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306210" >大甲</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306183" >彰化市</div>  
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306195" >二林</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306201" >鹿港</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306212" >斗南</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306206" >布袋</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306182" >安平</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306193" >佳里</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306203" >麻豆</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306217" >新化</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306232" >玉井</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306180" >左營</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306199" >岡山</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306255" >高雄國際機場</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306189" >屏東</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306213" >東港</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306224" >枋山</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306198" >宜蘭市</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306208" >蘇澳</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306243" >南澳</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306187" >花蓮市</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306190" >台東市</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306227" >關山</div>
+    <div class="btn btn-link" onclick="javascript:getinfo(this.id)" id="2306204" >南投市</div>      
+    
+<h3>功能2. 下拉式選單</h3>
+<div id="method2">
+<select class="selectpicker show-tick" id="citybox1" onChange="javascript:showarea(this.options[this.options.selectedIndex].value)"></select>
+<select class="selectpicker show-tick" id="citybox2" onChange="javascript:showcity(this.options[this.options.selectedIndex].value)"></select></div>
+<div id="method3"></div></div>
+<div class="span7">
+<div class="hero-unit" id="result">
+<h4>Title</h4>
+<div id="title">No data.<br></div>
+<h4>Date</h4>
+<div id="date">No data.<br></div>
+<h4>Location</h4>
+<div id="location">No data.</div>
+<h4>Temp</h4>
+<div id="temp">No data.</div>
+<h4>Text</h4>
+<div id="text">No data.</div></div></div></div> 
+<script src="js/jquery-1.9.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script> 
+<script type="text/javascript">
+
+    function acity(name, value, count, child) {
+        this.name = name;
+        this.value = value;
+        this.count = count;
+        this.child = child;
+    }
+
+    function buildcityarray() {
+        var citytree = new Array;
+
+        var citychild = new Array;
+        citychild[0] = new Array;
+        citychild[0][0] = new acity('七堵', '2306188', 0, null);
+
+        citychild[1] = new Array;
+        citychild[1][0] = new acity('內湖', '2306179', 0, null);
+        citychild[1][1] = new acity('新店', '2306186', 0, null);
+
+        citychild[2] = new Array;
+        citychild[2][0] = new acity('淡水', '2306211', 0, null);
+        citychild[2][1] = new acity('鶯歌', '2306214', 0, null);
+        citychild[2][2] = new acity('金山', '2306223', 0, null);
+        citychild[2][3] = new acity('三芝', '2306228', 0, null);
+		citychild[2][4] = new acity('萬里', '2306231', 0, null);
+		citychild[2][5] = new acity('雙溪', '2306251', 0, null);
+		
+
+        citychild[3] = new Array;
+        citychild[3][0] = new acity('大園', '2306209', 0, null);
+        citychild[3][1] = new acity('中壢', '2306184', 0, null);
+        citychild[3][2] = new acity('觀音', '2306200', 0, null);
+        citychild[3][3] = new acity('龍潭', '2306202', 0, null);
+		citychild[3][4] = new acity('桃園國際機場', '2306254', 0, null);
+
+        citychild[4] = new Array;
+        citychild[4][0] = new acity('東區', '2306185', 0, null);
+		
+		citychild[5] = new Array;
+		citychild[5][0] = new acity('三灣','2306229', 0, null);
+		
+		citychild[6] = new Array;
+		citychild[6][0] = new acity('西屯', '2306181', 0, null);
+		citychild[6][1] = new acity('石岡', '2306207', 0, null);
+		citychild[6][2] = new acity('清水', '2306194', 0, null);
+		citychild[6][3] = new acity('新社', '2306231', 0, null);
+		citychild[6][4] = new acity('大甲', '2306210', 0, null);
+		
+		citychild[7] = Array;
+		citychild[7][0] = new acity('彰化市', '2306183', 0, null);
+		citychild[7][1] = new acity('二林', '2306195', 0, null);
+		citychild[7][2] = new acity('鹿港', '2306201', 0, null);
+		
+		citychild[8] = Array;
+		citychild[8][0] = new acity('斗南', '2306212', 0, null);
+		citychild[8][1] = new acity('虎尾', '2306250', 0, null);
+		
+		citychild[9] = Array;
+		citychild[9][0] = new acity('嘉義', '2306206', 0, null);
+		
+		citychild[10] = Array;
+		citychild[10][0] = new acity('安平', '2306182', 0, null);
+		citychild[10][1] = new acity('佳里', '2306193', 0, null);
+		citychild[10][2] = new acity('麻豆', '2306203', 0, null);
+		citychild[10][3] = new acity('新化', '2306217', 0, null);
+		citychild[10][4] = new acity('玉井', '2306232', 0, null);
+		
+		citychild[11] = new Array;
+		citychild[11][0] = new acity('左營', '2306180', 0, null);
+		citychild[11][1] = new acity('岡山', '2306199', 0, null);
+		citychild[11][2] = new acity('高雄國際機場', '2306225', 0, null);
+		
+		citychild[12] = new Array;
+		citychild[12][0] = new acity('屏東市', '2306189', 0, null);
+		citychild[12][1] = new acity('東港', '2306213', 0, null);
+		citychild[12][2] = new acity('枋山', '2306224', 0, null);
+		
+		citychild[13] = new Array;
+		citychild[13][0] = new acity('宜蘭市', '2306198', 0, null);
+		citychild[13][1] = new acity('蘇澳', '2306208', 0, null);
+		citychild[13][2] = new acity('南澳', '2306243', 0, null);
+		
+		citychild[14] = new Array;
+		citychild[14][0] = new acity('花蓮市', '2306187', 0, null);
+		
+		citychild[15] = new Array;
+		citychild[15][0] = new acity('台東市', '2306190', 0, null);
+		citychild[15][1] = new acity('關山', '2306227', 0, null);
+		
+		citychild[16] = new Array;
+		citychild[16][0] = new acity('南投市', '2306204', 0, null);
+
+
+
+
+        citytree[0] = new acity('基隆', '1', 1, citychild[0]);
+        citytree[1] = new acity('台北', '2', 2, citychild[1]);
+        citytree[2] = new acity('新北市', '3', 6, citychild[2]);
+        citytree[3] = new acity('桃園', '4', 5, citychild[3]);
+        citytree[4] = new acity('新竹', '5', 1, citychild[4]);
+		citytree[5] = new acity('苗栗', '6',1, citychild[5]);
+		citytree[6] = new acity('台中', '7',5, citychild[6]);
+		citytree[7] = new acity('彰化', '8',3, citychild[7]);
+		citytree[8] = new acity('雲林', '9',2, citychild[8]);
+		citytree[9] = new acity('嘉義', '10',1, citychild[9]);
+		citytree[10] = new acity('台南', '11',5, citychild[10]);
+		citytree[11] = new acity('高雄', '12',3, citychild[11]);
+		citytree[12] = new acity('屏東', '13',3, citychild[12]);
+		citytree[13] = new acity('宜蘭', '14',3, citychild[13]);
+		citytree[14] = new acity('花蓮', '15',1, citychild[14]);
+		citytree[15] = new acity('台東', '16',2, citychild[15]);
+		citytree[16] = new acity('南投', '17',1, citychild[16]);
+	
+        return citytree;
+    }
+
+    function showcity(id) {
+        
+    
+        var citytree = buildcityarray();
+        var cityitem;
+        
+        for (i = 0; i < 16; i++) {
+            cityitem = citytree[i].child;
+            for (j = 0; j < citytree[i].count; j++) {
+               
+               if (id== cityitem[j].name) {
+                //alert(citytree[i][j].name);
+                 getinfo(cityitem[j].value);
+               }
+            }
+        }
+        
+    }
+
+    function showarea(id) {
+        var citytree = buildcityarray();
+        var cityitem;
+
+        for (i = 0; i < 16; i++) {
+            if (id == citytree[i].name) {
+                cityitem = citytree[i].child;
+               
+                $("#citybox2").find('option').remove();
+                if (citytree[i].count != 0) {
+                    var menu = [];
+                    for (j = 0; j < citytree[i].count; j++) {
+                        menu.push("<option id='" + cityitem[j].value + "'>" + cityitem[j].name + "</option>");
+                    }
+                    $("#citybox2").append(menu);
+                    getinfo(cityitem[0].value);
+                }
+                break;
+            }
+        }
+       
+
+
+       
+    }
+
+    function getinfo(wid) {
+        var woeid = wid;
+        var query = 'select * from weather.forecast where woeid=' + woeid;
+        var url = 'http://query.yahooapis.com/v1/public/yql?format=json&q=' + query + '&callback=?';
+
+        var str1 = woeid;
+        var str2 = "2013/08/09";
+        var str3 = "taipei";
+        var str4 = "31";
+        var str5 = "xxxx";
+
+        $.getJSON(url, function (data) {
+            var obj = data.query.results.channel.title;
+
+            str1 = data.query.results.channel.title;
+            str2 = data.query.results.channel.item.condition.date;
+            str3 = data.query.results.channel.location.city + ',' + data.query.results.channel.location.country;
+            str4 = data.query.results.channel.item.condition.temp + ' F';
+            str5 = data.query.results.channel.item.condition.text;
+
+            $('#title').replaceWith('<div id="title">' + str1 + '</div>');
+            $('#date').replaceWith('<div id="date">' + str2 + '</div>');
+            $('#location').replaceWith('<div id="location">' + str3 + '</div>');
+            $('#temp').replaceWith('<div id="temp">' + str4 + '</div>');
+            $('#text').replaceWith('<div id="text">' + str5 + '</div>');
+        })
+    }
+
+    function init() {
+        var citytree = buildcityarray();
+       
+        var menu = [];
+        var selectaid = 0;
+        var selectcid = 0;
+
+
+
+        for (i = 0; i < 16; i++) {
+
+            if (i == selectaid)
+                menu.push("<option id='" + citytree[i].value + "' selected >" + citytree[i].name + "</option>");
+            else
+                menu.push("<option id='" + citytree[i].value + "'>" + citytree[i].name + "</option>");
+
+        }
+        $("#citybox1").append(menu);
+
+        var cityitem;
+        cityitem = citytree[selectaid].child;
+       
+        var menu1 = [];
+        for (j = 0; j < citytree[selectaid].count; j++) {
+                menu1.push("<option id='" + cityitem[j].value + "'>" + cityitem[j].name + "</option>");
+        }
+        $("#citybox2").append(menu1);
+        
+
+        //showcity('木柵');
+
+        getinfo(cityitem[selectcid].value);
+    }
+
+   
+</script>
+</body>
+</html> 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
